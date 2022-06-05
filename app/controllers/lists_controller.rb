@@ -4,7 +4,7 @@ class ListsController < ApplicationController
   end
   
   def create
-    list = List.new(list.params)
+    list = List.new(list_params)
     list.save
     redirect_to "/lists"
   end
